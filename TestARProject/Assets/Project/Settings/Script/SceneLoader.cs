@@ -6,31 +6,42 @@ namespace TestArProject.Settings
 {
     public class SceneLoader : MonoBehaviour
     {
-        public static SceneLoader instance;
+        #region Scene references
+
         [SerializeField] private LoadingScreenView _loadingScreenViewPrefab;
-        private LoadingScreenView _loadingScreenView;
+        [SerializeField] private Transform parent;
+
+        #endregion
+        
+        #region Unity events
 
         private void Awake()
         {
-            if (instance == null)
+            if (SceneManager.GetActiveScene().buildIndex == 0)
             {
-                instance = this;
+                ChangeScene(1);
             }
-            else if (instance == this)
-            {
-                Destroy(gameObject);
-            }
-            DontDestroyOnLoad(gameObject);
         }
+
+        #endregion
+
+        #region Public API
 
         public void ChangeScene(int index)
         {
-            _loadingScreenView = Instantiate(_loadingScreenViewPrefab);
+            _loadingScreenView = Instantiate(_loadingScreenViewPrefab, parent);
             StartCoroutine(TrackingLoadProcentCoroutine(index));
         }
+
+        #endregion
+
+        #region Private API
+
+        private LoadingScreenView _loadingScreenView;
         
         private IEnumerator TrackingLoadProcentCoroutine(int numberScene)
         {
+            yield return new WaitForSeconds(1f);
             AsyncOperation asyncOperation = SceneManager.LoadSceneAsync(numberScene);
             
             while (!asyncOperation.isDone)
@@ -39,6 +50,9 @@ namespace TestArProject.Settings
                 yield return null;
             }
         }
+
+        #endregion
+        
     }
 }
 
