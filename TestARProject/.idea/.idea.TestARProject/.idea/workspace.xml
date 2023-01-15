@@ -17,6 +17,7 @@
     <setting file="file://$PROJECT_DIR$/Assets/Project/Settings/Script/LoadingScreenView.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Project/Settings/Script/SceneLoader.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.xr.arfoundation@5.0.3/Runtime/ARFoundation/ARRaycastManager.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.xr.arfoundation@5.0.3/Runtime/ARFoundation/SubsystemLifecycleManager.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.xr.arfoundation@5.0.3/Runtime/Simulation/Subsystems/Meshing/SimulationMeshSubsystem.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="MarkdownSettingsMigration">
@@ -95,7 +96,7 @@
       <workItem from="1673678741268" duration="8183000" />
       <workItem from="1673698441027" duration="80000" />
       <workItem from="1673698784572" duration="3306000" />
-      <workItem from="1673751466966" duration="4067000" />
+      <workItem from="1673751466966" duration="6386000" />
     </task>
     <servers />
   </component>

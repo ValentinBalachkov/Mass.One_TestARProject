@@ -2,6 +2,7 @@ using TestArProject.Objects;
 using TestArProject.Settings;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.XR.ARFoundation;
 
 namespace TestArProject.UI
 {
@@ -9,6 +10,7 @@ namespace TestArProject.UI
     {
         [SerializeField] private Button _useBtn;
         [SerializeField] private Button _restartBtn;
+
 
         private AbstractObjectOnScene _objectOnScene;
         private Vector3 _ray_start_position;
