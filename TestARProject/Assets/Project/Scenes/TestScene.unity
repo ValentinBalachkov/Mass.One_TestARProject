@@ -1282,6 +1282,7 @@ GameObject:
   - component: {fileID: 1724627454}
   - component: {fileID: 1724627453}
   - component: {fileID: 1724627451}
+  - component: {fileID: 1724627456}
   - component: {fileID: 1724627455}
   m_Layer: 0
   m_Name: XR Origin
@@ -1346,11 +1347,26 @@ MonoBehaviour:
   m_GameObject: {fileID: 1724627450}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 728ad7fae8e460a4ba41265c7308d757, type: 3}
+  m_Script: {fileID: 11500000, guid: fa17d122634046b4a8e23048891fafc5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_AnchorPrefab: {fileID: 8175794235777766705, guid: 69b6447e213c2bb43981278bdb98d794,
+  m_RaycastPrefab: {fileID: 1428476568895315256, guid: cf176719d9cf9634b95dee21e44fd28a,
     type: 3}
+--- !u!114 &1724627456
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1724627450}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f7de20a2fc472334c9ca02440a50953c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _objectPrefab: {fileID: 8175794235777766705, guid: 69b6447e213c2bb43981278bdb98d794,
+    type: 3}
+  _arRaycastManager: {fileID: 1724627455}
 --- !u!4 &1807912623 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8724001800281031724, guid: e0b8ec6d75e735c43ab179e210bcd2df,
