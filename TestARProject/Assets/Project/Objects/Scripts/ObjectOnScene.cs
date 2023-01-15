@@ -1,5 +1,8 @@
 using UnityEngine;
 
+
+
+
 namespace TestArProject.Objects
 {
     public class ObjectOnScene : MonoBehaviour
@@ -7,7 +10,9 @@ namespace TestArProject.Objects
         #region Scene references
         
         [SerializeField] private MeshRenderer _meshRenderer;
+        [SerializeField] private Outline _outline;
         
+
         #endregion
         
         #region Unity events
@@ -23,6 +28,11 @@ namespace TestArProject.Objects
         public void SetRandomColor()
         {
             _material.color = GetRandomColor();
+        }
+
+        public void SetOutline(int value)
+        {
+            _outline.OutlineWidth = value;
         }
         
         #endregion

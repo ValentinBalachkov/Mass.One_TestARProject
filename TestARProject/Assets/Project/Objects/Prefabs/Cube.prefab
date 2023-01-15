@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 8175794235777766706}
   - component: {fileID: 8175794235777766707}
   - component: {fileID: 8175794235777766708}
+  - component: {fileID: 2451546061792385722}
   m_Layer: 0
   m_Name: Cube
   m_TagString: Untagged
@@ -119,3 +120,22 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _meshRenderer: {fileID: 8175794235777766706}
+  _outline: {fileID: 2451546061792385722}
+--- !u!114 &2451546061792385722
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8175794235777766705}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5fea29bb7c508c244a1f805a5fd3fc4d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  outlineMode: 0
+  outlineColor: {r: 0.12156863, g: 1, b: 0, a: 1}
+  outlineWidth: 0
+  precomputeOutline: 0
+  bakeKeys: []
+  bakeValues: []

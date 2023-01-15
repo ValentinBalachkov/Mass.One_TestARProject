@@ -1363,6 +1363,18 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 8175794234838105553}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1477339363 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 8175794235777766708, guid: 69b6447e213c2bb43981278bdb98d794,
+    type: 3}
+  m_PrefabInstance: {fileID: 8175794234838105553}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 80ab022028415b941813f912912371ac, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1724627450
 GameObject:
   m_ObjectHideFlags: 0
@@ -1502,12 +1514,40 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _useBtn: {fileID: 696741701}
+  _objectsOnScene:
+  - {fileID: 1477339363}
+  - {fileID: 1807912625}
+  - {fileID: 1768490344}
+--- !u!114 &1768490344 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 5562175502207139278, guid: 0cef6f0ab633247479fa3cf62f404c7f,
+    type: 3}
+  m_PrefabInstance: {fileID: 5562175502353715521}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 80ab022028415b941813f912912371ac, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!4 &1807912623 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8724001800281031724, guid: e0b8ec6d75e735c43ab179e210bcd2df,
     type: 3}
   m_PrefabInstance: {fileID: 8724001798817057411}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1807912625 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 8724001800281031728, guid: e0b8ec6d75e735c43ab179e210bcd2df,
+    type: 3}
+  m_PrefabInstance: {fileID: 8724001798817057411}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 80ab022028415b941813f912912371ac, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &5562175502353715521
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1750,6 +1790,11 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 166931518}
     m_Modifications:
+    - target: {fileID: -9095134499927736703, guid: e0b8ec6d75e735c43ab179e210bcd2df,
+        type: 3}
+      propertyPath: outlineWidth
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8724001800281031724, guid: e0b8ec6d75e735c43ab179e210bcd2df,
         type: 3}
       propertyPath: m_RootOrder
