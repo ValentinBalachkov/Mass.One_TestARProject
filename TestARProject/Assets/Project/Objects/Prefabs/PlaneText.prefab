@@ -66,7 +66,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Valentin_Balachkov
+  m_text: '[Valentin_Balachkov]'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 49032caf809dd864cb752fc524e26879, type: 2}
   m_sharedMaterial: {fileID: 8001816909398693529, guid: 49032caf809dd864cb752fc524e26879,
@@ -171,7 +171,7 @@ Transform:
   m_Children:
   - {fileID: 5562175502798711745}
   m_Father: {fileID: 0}
-  m_RootOrder: 0
+  m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: -90, z: 90}
 --- !u!33 &5562175502207139279
 MeshFilter:

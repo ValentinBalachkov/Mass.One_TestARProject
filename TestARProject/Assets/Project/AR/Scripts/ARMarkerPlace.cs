@@ -10,7 +10,7 @@ namespace TestArProject.ARComponents
         #region Scene references
 
         [SerializeField] private ARRaycastManager _arRaycastManager;
-        [SerializeField] private GameObject _pointer;
+        [SerializeField] private GameObject _markerObject;
 
         #endregion
         
@@ -28,8 +28,8 @@ namespace TestArProject.ARComponents
             _arRaycastManager.Raycast(_ray_start_position, _hits, TrackableType.Planes);
             if (_hits.Count > 0)
             {
-                _pointer.transform.position = _hits[0].pose.position;
-                _pointer.transform.rotation = _hits[0].pose.rotation;
+                _markerObject.transform.position = _hits[0].pose.position;
+                _markerObject.transform.rotation = _hits[0].pose.rotation;
             }
         }
 

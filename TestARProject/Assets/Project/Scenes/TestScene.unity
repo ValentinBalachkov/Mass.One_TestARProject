@@ -863,6 +863,12 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 545487658}
   m_CullTransparentMesh: 1
+--- !u!1 &566253234 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7534077433855155749, guid: 198f07afda0adff459fb73d1e97bc40b,
+    type: 3}
+  m_PrefabInstance: {fileID: 7534077433630026779}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &696741699
 GameObject:
   m_ObjectHideFlags: 0
@@ -1394,6 +1400,7 @@ GameObject:
   - component: {fileID: 1724627458}
   - component: {fileID: 1724627457}
   - component: {fileID: 1724627460}
+  - component: {fileID: 1724627461}
   m_Layer: 0
   m_Name: XR Origin
   m_TagString: Untagged
@@ -1521,6 +1528,20 @@ MonoBehaviour:
   - {fileID: 1477339363}
   - {fileID: 1807912625}
   - {fileID: 1768490344}
+--- !u!114 &1724627461
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1724627450}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3e14eb0b2cd34034ebb2f203764766f9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _arRaycastManager: {fileID: 1724627458}
+  _markerObject: {fileID: 566253234}
 --- !u!114 &1768490344 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 5562175502207139278, guid: 0cef6f0ab633247479fa3cf62f404c7f,
