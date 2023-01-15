@@ -9,6 +9,7 @@ namespace TestArProject.UI
     {
         [SerializeField] private Button _useBtn;
         [SerializeField] private Button _restartBtn;
+
         private AbstractObjectOnScene _objectOnScene;
         private Vector3 _ray_start_position;
         private RaycastHit _hit;
@@ -37,21 +38,8 @@ namespace TestArProject.UI
         private void Update()
         {
             _ray = _mainCamera.ScreenPointToRay(_ray_start_position);
-            if (Physics.Raycast(_ray, out _hit)) {
-                
-                if (_hit.transform.TryGetComponent(out _objectOnScene))
-                {
-                    _useBtn.gameObject.SetActive(true);
-                }
-                else
-                {
-                    _useBtn.gameObject.SetActive(false);
-                }
-            }
-            else
-            {
-                _useBtn.gameObject.SetActive(false);
-            }
+            _useBtn.gameObject.SetActive(Physics.Raycast(_ray, out _hit) &&
+                                         _hit.transform.TryGetComponent(out _objectOnScene));
         }
     }
 }
